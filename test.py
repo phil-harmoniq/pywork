@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-from package_test.cool_script import CoolObject
+from functional_test import map_and_reduce
 
-thing = CoolObject("Danny Man", 18)
+names = ['Mary', 'Isla', 'Sam']
 
-thing.static_shit("Static bruh")
-thing.say_name()
+new_names = map_and_reduce.functional(names)
+
+for n in new_names:
+    print(n)
